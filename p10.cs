@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Project5
+{
+    class p10
+    {
+        public static void Main(String[] args)
+        {
+            int[,] a = new int[2, 2];
+            int[,] b = new int[2, 2];
+            int[,] c = new int[2, 2];
+
+            Console.WriteLine("Enter elements of first matrix:");
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    a[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            Console.WriteLine("Enter elements of second matrix:");
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    b[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    c[i, j] = a[i, j] + b[i, j];
+                }
+            }
+
+            Console.WriteLine("Addition of two matrices:");
+
+            for (int i = 0; i < 2; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    Console.Write(c[i, j] + " ");
+                }
+
+                Console.WriteLine();
+            }
+
+            Console.WriteLine("Name : AESH DOMADIYA");
+            Console.WriteLine("Enrollment No. : 24SOECE11008");
+        }
+    }
+}
